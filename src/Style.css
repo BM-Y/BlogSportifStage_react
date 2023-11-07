@@ -1,0 +1,32 @@
+
+ul.navbar {
+
+    list-style-type: none;
+    margin: 100;
+    padding: 100;
+    background-color: #b1aaaa; /* Couleur de fond de la navbar */
+  }
+
+  ul.navbar li {
+    display: inline;
+  }
+
+  ul.navbar li a {
+    display: block;
+    color: rgb(33, 20, 20);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  ul.navbar li a:hover {
+    background-color: #555; /* Couleur de fond au survol */
+  }
+article.maclassarticle{
+    background-color: #fff; /* Couleur de fond de l'article */
+    border: 1px solid #ddd; /* Bordure de l'article */
+    padding: 20px; /* Espacement interne de l'article */
+    margin: 20px 0; /* Marge externe de l'article (haut et bas) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce */
+
+}

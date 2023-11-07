@@ -1,6 +1,8 @@
 import {useEffect, useState } from 'react'
-
+import './style.css'
+// import { Formulaire } from './components/Formulaire'
 import './App.css'
+
 
 function App() {
   const [display, setDisplay] = useState([])
@@ -14,23 +16,29 @@ function App() {
 },[])
 
 
-
-
   return (
     <>
-     {display.map((elem, index)=>
+    <nav>
+  <ul class="navbar">
+    <li><a href="#">Accueil</a></li>
+      
+        {display.map((elem, index)=>
+          <article class ="maclassarticle" key={index} >
+          <h4>{elem.titre}</h4>
+          <date>{elem.date}</date>
+          <p>{elem.contenue}</p>
+          <img src={elem.image}/>
+          </article>
+      
+)}
+    <li><a href="#">Categories</a></li>
+    <li><a href="#">À propos</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+     
 
-     <article key={index} >
-
-        <p>{elem.titre}</p>
-
-        <img src={""+elem.image}/>
-
-        </article>
-
-
-     )}
-    
+  
     </>
   )
 }
